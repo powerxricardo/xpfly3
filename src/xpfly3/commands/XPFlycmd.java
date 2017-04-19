@@ -24,6 +24,8 @@ het werkt alleen als je er achter ook nog de naam zet. ik wil dat je ook gewoon 
 WORK IN PROGRESS!!!
 */
 
+
+
 public class XPFlycmd implements CommandExecutor
 {
     @Override
@@ -34,6 +36,7 @@ public class XPFlycmd implements CommandExecutor
             //foutmelding naar speler
             return false;
         }
+        
         /*
          Player p = (Player) sender; werkt nog niet. waarom weet ik niet.
         dit komt waarschijnlijk omdat ik in dat ifstatement die er boven zit "if(sender instanceof Player) {" de zelfde variable gebruikt...
