@@ -1,6 +1,28 @@
 name: xpfly3
-main: xpfly3.main
+main: xpfly3.XPFly
 version: 1.0
+authors:
+    - Colecar
+    - Myron-Pigna
+description: beschrijving
 commands:
-    refil:
-        
+    xpfly:
+        description: 
+        aliases: [fly, xpf]
+        usage:
+          /<command> [parm] [parm] [parm]
+        permission: xpfly.use
+
+permissions:
+    xpfly.*:
+        description: Gives access to all commands
+        default: op
+        children:
+            xpfly.use: true
+            xpfly.other: true
+    xpfly.use:
+        description: Allow the use of the xpfly command
+        default: op
+    xpfly.other:
+        description: Allow to activate/deactivate other players xpfly
+        default: op
